@@ -50,21 +50,8 @@ class UserController extends Controller
 
             $user = Auth::user();
 
-            // Redirect based on role
-            switch ($user->role) {
-                case 'admin':
-                    //return redirect()->route('admin.dashboard')->with('success', 'Welcome Admin!');
-                case 'agency_staff':
-                    //return redirect()->route('agency.dashboard')->with('success', 'Welcome Agency Staff!');
-                case 'user':
-                    return redirect()->route('home')->with('success', 'Welcome User!');
-                default:
-                    Auth::logout();
-                    return redirect()->route('user.login')->with('error', 'Unknown role!');
-            }
+            return redirect()->route('home');
         }
-
-        return redirect()->back()->with('error', 'Invalid credentials.');
     }
 
     public function logout(Request $request)
