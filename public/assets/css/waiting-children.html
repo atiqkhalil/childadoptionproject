@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Loving Families - Waiting Children</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
+            <a href="index.html" class="navbar-brand">
+                <h1 class="m-0 text-primary"><i class="fa fa-heart me-3"></i>Loving Families</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About Us</a>
+                    <a href="adoption-process.html" class="nav-item nav-link">Adoption Process</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
+                            <a href="waiting-children.html" class="dropdown-item active">Waiting Children</a>
+                            <a href="success-stories.html" class="dropdown-item">Success Stories</a>
+                            <a href="faq.html" class="dropdown-item">FAQ</a>
+                            <a href="appointment.html" class="dropdown-item">Make Appointment</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonials</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                </div>
+                <a href="" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Start Your Journey<i class="fa fa-arrow-right ms-3"></i></a>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Page Header End -->
+        <div class="container-xxl py-5 page-header position-relative mb-5">
+            <div class="container py-5">
+                <h1 class="display-2 text-white animated slideInDown mb-4">Waiting Children</h1>
+                <nav aria-label="breadcrumb animated slideInDown">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Waiting Children</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+        <!-- Children Gallery Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Children Waiting for Families</h1>
+                    <p>These wonderful children are looking for their forever homes. Could your family be the perfect match?</p>
+                </div>
+                
+                <!-- Filter Options -->
+                <div class="row mb-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <select class="form-select" id="ageFilter">
+                                <option value="all">All Ages</option>
+                                <option value="0-2">0-2 years</option>
+                                <option value="3-5">3-5 years</option>
+                                <option value="6-10">6-10 years</option>
+                                <option value="11+">11+ years</option>
+                            </select>
+                            <label for="ageFilter">Filter by Age</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <select class="form-select" id="typeFilter">
+                                <option value="all">All Types</option>
+                                <option value="domestic">Domestic</option>
+                                <option value="international">International</option>
+                                <option value="foster">Foster Care</option>
+                                <option value="siblings">Sibling Groups</option>
+                                <option value="special">Special Needs</option>
+                            </select>
+                            <label for="typeFilter">Filter by Adoption Type</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Children Profiles -->
+                <div class="row g-4">
+                    <!-- Child 1 -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="img/child-1.jpg" alt="Emma" style="cursor: pointer;" onclick="showChildProfile('Emma')">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5 text-center">
+                                <h3 class="mb-3">Emma, 4</h3>
+                                <div class="d-flex justify-content-center mb-3">
+                                    <span class="btn btn-sm btn-primary mx-1">Domestic</span>
+                                    <span class="btn btn-sm btn-success mx-1">Single</span>
+                                </div>
+                                <p class="mb-4">Sweet and playful, Emma loves drawing and outdoor activities. She's looking for a loving family to call her own.</p>
+                                <button class="btn btn-primary py-2 px-4" onclick="showAdoptionForm('Emma')">Adopt Emma</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Child 2 -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="img/child-2.jpg" alt="James & Lily" style="cursor: pointer;" onclick="showChildProfile('James & Lily')">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5 text-center">
+                                <h3 class="mb-3">James & Lily, 6 & 8</h3>
+                                <div class="d-flex justify-content-center mb-3">
+                                    <span class="btn btn-sm btn-warning mx-1">Siblings</span>
+                                    <span class="btn btn-sm btn-info mx-1">Foster Care</span>
+                                </div>
+                                <p class="mb-4">This bonded sibling pair needs to stay together. James is protective of his little sister Lily who adores animals.</p>
+                                <button class="btn btn-primary py-2 px-4" onclick="showAdoptionForm('James & Lily')">Adopt Siblings</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Child 3 -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="img/child-3.jpg" alt="Diego" style="cursor: pointer;" onclick="showChildProfile('Diego')">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5 text-center">
+                                <h3 class="mb-3">Diego, 2</h3>
+                                <div class="d-flex justify-content-center mb-3">
+                                    <span class="btn btn-sm btn-success mx-1">International</span>
+                                    <span class="btn btn-sm btn-primary mx-1">Colombia</span>
+                                </div>
+                                <p class="mb-4">Bright-eyed Diego is full of energy and loves music. He's waiting for a family to help him thrive.</p>
+                                <button class="btn btn-primary py-2 px-4" onclick="showAdoptionForm('Diego')">Adopt Diego</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Child 4 -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="img/child-4.jpg" alt="Sophia" style="cursor: pointer;" onclick="showChildProfile('Sophia')">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5 text-center">
+                                <h3 class="mb-3">Sophia, 7</h3>
+                                <div class="d-flex justify-content-center mb-3">
+                                    <span class="btn btn-sm btn-primary mx-1">Domestic</span>
+                                    <span class="btn btn-sm btn-danger mx-1">Special Needs</span>
+                                </div>
+                                <p class="mb-4">Sophia has cerebral palsy but doesn't let it slow her down. She's creative, determined and needs a supportive family.</p>
+                                <button class="btn btn-primary py-2 px-4" onclick="showAdoptionForm('Sophia')">Adopt Sophia</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Child 5 -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="img/child-5.jpg" alt="Michael" style="cursor: pointer;" onclick="showChildProfile('Michael')">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5 text-center">
+                                <h3 class="mb-3">Michael, 9</h3>
+                                <div class="d-flex justify-content-center mb-3">
+                                    <span class="btn btn-sm btn-info mx-1">Foster Care</span>
+                                    <span class="btn btn-sm btn-success mx-1">Athletic</span>
+                                </div>
+                                <p class="mb-4">Michael loves sports, especially soccer. He's hoping for an active family to share his passions with.</p>
+                                <button class="btn btn-primary py-2 px-4" onclick="showAdoptionForm('Michael')">Adopt Michael</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Child 6 -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="img/child-6.jpg" alt="Mei" style="cursor: pointer;" onclick="showChildProfile('Mei')">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5 text-center">
+                                <h3 class="mb-3">Mei, 3</h3>
+                                <div class="d-flex justify-content-center mb-3">
+                                    <span class="btn btn-sm btn-success mx-1">International</span>
+                                    <span class="btn btn-sm btn-primary mx-1">China</span>
+                                </div>
+                                <p class="mb-4">Mei is a joyful toddler who loves puzzles and story time. She's waiting for her forever family.</p>
+                                <button class="btn btn-primary py-2 px-4" onclick="showAdoptionForm('Mei')">Adopt Mei</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <a href="#" class="btn btn-primary py-3 px-5">View More Children</a>
+                </div>
+            </div>
+        </div>
+        <!-- Children Gallery End -->
+
+        <!-- Child Profile Modal -->
+        <div class="modal fade" id="childProfileModal" tabindex="-1" aria-labelledby="childProfileModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="childProfileModalLabel">Child Profile</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img id="childProfileImage" src="img/child-1.jpg" class="img-fluid rounded mb-3" alt="Child Profile">
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary" onclick="showAdoptionForm(document.getElementById('childProfileModalLabel').innerText.split(' - ')[0])">
+                                        <i class="fa fa-heart me-2"></i>Adopt This Child
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <h3 id="childProfileName" class="mb-3"></h3>
+                                <div class="row mb-3">
+                                    <div class="col-6">
+                                        <p><strong>Age:</strong> <span id="childProfileAge"></span></p>
+                                        <p><strong>Gender:</strong> <span id="childProfileGender"></span></p>
+                                        <p><strong>Location:</strong> <span id="childProfileLocation"></span></p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p><strong>Adoption Type:</strong> <span id="childProfileType"></span></p>
+                                        <p><strong>Siblings:</strong> <span id="childProfileSiblings"></span></p>
+                                        <p><strong>Special Needs:</strong> <span id="childProfileNeeds"></span></p>
+                                    </div>
+                                </div>
+                                <h5 class="mb-2">About Me</h5>
+                                <p id="childProfileAbout" class="mb-3"></p>
+                                <h5 class="mb-2">Personality</h5>
+                                <p id="childProfilePersonality" class="mb-3"></p>
+                                <h5 class="mb-2">Interests</h5>
+                                <p id="childProfileInterests"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Adoption Form Modal -->
+        <div class="modal fade" id="adoptionFormModal" tabindex="-1" aria-labelledby="adoptionFormModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="adoptionFormModalLabel">Adoption Interest Form</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="adoptionForm">
+                            <input type="hidden" id="childName" name="childName">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="parentName" placeholder="Your Name" required>
+                                        <label for="parentName">Your Full Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="parentEmail" placeholder="Your Email" required>
+                                        <label for="parentEmail">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control" id="parentPhone" placeholder="Your Phone" required>
+                                        <label for="parentPhone">Your Phone</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="parentCity" placeholder="Your City" required>
+                                        <label for="parentCity">Your City</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="adoptionType" required>
+                                            <option value="">Select adoption type</option>
+                                            <option value="domestic">Domestic Adoption</option>
+                                            <option value="international">International Adoption</option>
+                                            <option value="foster">Foster Care Adoption</option>
+                                        </select>
+                                        <label for="adoptionType">Type of Adoption</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Tell us about your family" id="familyInfo" style="height: 100px" required></textarea>
+                                        <label for="familyInfo">Tell us about your family</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Why are you interested in adopting this child?" id="adoptionReason" style="height: 100px" required></textarea>
+                                        <label for="adoptionReason">Why are you interested in adopting this child?</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                                        <label class="form-check-label" for="agreeTerms">
+                                            I agree to the terms and conditions and understand this is the first step in the adoption process
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="submitAdoptionForm()">Submit Interest</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Get In Touch</h3>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Family Ave, New York, USA</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+1 234 567 8900</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@lovingfamilies.org</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Quick Links</h3>
+                        <a class="btn btn-link text-white-50" href="about.html">About Us</a>
+                        <a class="btn btn-link text-white-50" href="adoption-process.html">Adoption Process</a>
+                        <a class="btn btn-link text-white-50" href="waiting-children.html">Waiting Children</a>
+                        <a class="btn btn-link text-white-50" href="faq.html">FAQ</a>
+                        <a class="btn btn-link text-white-50" href="contact.html">Contact Us</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Photo Gallery</h3>
+                        <div class="row g-2 pt-2">
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/gallery-1.jpg" alt="Adopted family">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/gallery-2.jpg" alt="Adopted siblings">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/gallery-3.jpg" alt="Family celebration">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/gallery-4.jpg" alt="Adoption event">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/gallery-5.jpg" alt="Family support group">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/gallery-6.jpg" alt="Adoption day">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Newsletter</h3>
+                        <p>Subscribe to our newsletter for adoption stories, events, and updates.</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Loving Families Adoption Agency</a>, All Rights Reserved.
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Privacy Policy</a>
+                                <a href="">Terms of Service</a>
+                                <a href="">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Custom Script for this Page -->
+    <script>
+        // Child profile data
+        const childrenData = {
+            "Emma": {
+                image: "img/child-1.jpg",
+                age: "4 years",
+                gender: "Female",
+                location: "Texas, USA",
+                type: "Domestic Adoption",
+                siblings: "None",
+                needs: "None",
+                about: "Emma came into care at age 2 and has been waiting for a loving family ever since. She's healthy, developmentally on track, and full of energy.",
+                personality: "Emma is outgoing and affectionate. She loves meeting new people and makes friends easily. She's curious about the world around her and asks lots of questions!",
+                interests: "Drawing, playing with dolls, visiting the park, singing songs"
+            },
+            "James & Lily": {
+                image: "img/child-2.jpg",
+                age: "6 & 8 years",
+                gender: "Male & Female",
+                location: "Florida, USA",
+                type: "Foster Care Adoption",
+                siblings: "Biological siblings (must be placed together)",
+                needs: "James has mild ADHD",
+                about: "James and Lily have been in foster care for 3 years. They've shown remarkable resilience and have a strong bond with each other.",
+                personality: "James is protective of his little sister and enjoys being the 'big brother.' Lily is more shy but warms up quickly. Both are kind-hearted children.",
+                interests: "James loves sports and building things. Lily enjoys arts and crafts and helping with animals."
+            },
+            "Diego": {
+                image: "img/child-3.jpg",
+                age: "2 years",
+                gender: "Male",
+                location: "Bogotá, Colombia",
+                type: "International Adoption",
+                siblings: "None",
+                needs: "None",
+                about: "Diego was born prematurely but has caught up developmentally. He's in good health and living in a loving foster home while awaiting adoption.",
+                personality: "Diego is a happy, active toddler who loves to explore. He's curious about everything and has a contagious laugh.",
+                interests: "Music, dancing, playing with balls, looking at picture books"
+            },
+            "Sophia": {
+                image: "img/child-4.jpg",
+                age: "7 years",
+                gender: "Female",
+                location: "California, USA",
+                type: "Domestic Adoption",
+                siblings: "None",
+                needs: "Cerebral palsy (uses a walker)",
+                about: "Sophia was born with cerebral palsy but has made tremendous progress with therapy. She's bright, determined and doesn't let her physical challenges stop her.",
+                personality: "Sophia is resilient and optimistic. She has a great sense of humor and loves making people laugh. She's also very empathetic toward others.",
+                interests: "Art projects, adaptive sports, reading, playing board games"
+            },
+            "Michael": {
+                image: "img/child-5.jpg",
+                age: "9 years",
+                gender: "Male",
+                location: "Ohio, USA",
+                type: "Foster Care Adoption",
+                siblings: "None",
+                needs: "None",
+                about: "Michael has been in foster care since age 6. He's done well in school and has formed positive relationships with his foster family and teachers.",
+                personality: "Michael is energetic and enthusiastic. He's a natural leader among his peers and has a strong sense of fairness.",
+                interests: "Soccer, swimming, science experiments, video games"
+            },
+            "Mei": {
+                image: "img/child-6.jpg",
+                age: "3 years",
+                gender: "Female",
+                location: "Beijing, China",
+                type: "International Adoption",
+                siblings: "None",
+                needs: "None",
+                about: "Mei was found as an infant and has lived in an orphanage since then. She's healthy and meeting all developmental milestones.",
+                personality: "Mei is cheerful and adaptable. She enjoys both quiet play and active games. She's beginning to show independence but still seeks comfort from caregivers.",
+                interests: "Puzzles, story time, playing with dolls, coloring"
+            }
+        };
+
+        // Show child profile modal
+        function showChildProfile(childName) {
+            const childData = childrenData[childName];
+            document.getElementById('childProfileModalLabel').textContent = childName + " - Profile";
+            document.getElementById('childProfileImage').src = childData.image;
+            document.getElementById('childProfileName').textContent = childName;
+            document.getElementById('childProfileAge').textContent = childData.age;
+            document.getElementById('childProfileGender').textContent = childData.gender;
+            document.getElementById('childProfileLocation').textContent = childData.location;
+            document.getElementById('childProfileType').textContent = childData.type;
+            document.getElementById('childProfileSiblings').textContent = childData.siblings;
+            document.getElementById('childProfileNeeds').textContent = childData.needs;
+            document.getElementById('childProfileAbout').textContent = childData.about;
+            document.getElementById('childProfilePersonality').textContent = childData.personality;
+            document.getElementById('childProfileInterests').textContent = childData.interests;
+            
+            const modal = new bootstrap.Modal(document.getElementById('childProfileModal'));
+            modal.show();
+        }
+
+        // Show adoption form modal
+        function showAdoptionForm(childName) {
+            document.getElementById('childName').value = childName;
+            document.getElementById('adoptionFormModalLabel').textContent = "Adoption Interest: " + childName;
+            
+            const modal = new bootstrap.Modal(document.getElementById('adoptionFormModal'));
+            modal.show();
+        }
+
+        // Submit adoption form
+        function submitAdoptionForm() {
+            // Here you would normally send the form data to your server
+            // For this example, we'll just show an alert and close the modal
+            const childName = document.getElementById('childName').value;
+            alert("Thank you for your interest in adopting " + childName + "! Our team will contact you shortly to discuss next steps.");
+            
+            const modal = bootstrap.Modal.getInstance(document.getElementById('adoptionFormModal'));
+            modal.hide();
+            
+            // Reset form
+            document.getElementById('adoptionForm').reset();
+        }
+
+        // Filter children (placeholder functionality)
+        document.getElementById('ageFilter').addEventListener('change', filterChildren);
+        document.getElementById('typeFilter').addEventListener('change', filterChildren);
+
+        function filterChildren() {
+            // In a real implementation, this would filter the displayed children
+            // For this example, we'll just log the filter values
+            const ageFilter = document.getElementById('ageFilter').value;
+            const typeFilter = document.getElementById('typeFilter').value;
+            console.log(`Filtering by age: ${ageFilter}, type: ${typeFilter}`);
+        }
+    </script>
+</body>
+
+</html>
