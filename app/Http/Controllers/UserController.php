@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
-    public function loginpage()
+    public function loginpag()
     {
         return view('login.login');
     }
